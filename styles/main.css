@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #797a79;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #845695;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p,
+a {
+  font-weight: 300;
+}
+
+.avatar__md {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar__sm {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+  background-color: #1a1a1a;
+  text-decoration: none;
+  padding: 16px 5%;
+  z-index: 999;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 0;
+  margin: 0;
+  color: #ebe0e0;
+}
+
+@media (max-width: 640px) {
+  #logo span {
+    display: none;
+  }
+}
+
+#logo img {
+  height: 42px;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+#nav__links {
+  display: flex;
+  align-items: center;
+  column-gap: 2em;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  transition: 1s;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 1px;
+}
+
+@media (max-width: 520px) {
+  #nav__links {
+    column-gap: 3em;
+  }
+}
+
+.nav__link:hover {
+  color: rgb(230, 228, 228);
+  text-decoration: none;
+  border-color: #845695;
+}
+
+#create__room__btn {
+  display: block;
+  background-color: #845695;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+#create__room__btn:hover {
+  background-color: #845695;
+}
+
+.nav--list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#members__button,
+#chat__button {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+#members__button:hover svg > path,
+#chat__button:hover svg,
+.nav__link:hover svg {
+  fill: #845695;
+}
+
+.nav__link svg {
+  width: 0;
+  height: 0;
+}
+
+@media (max-width: 640px) {
+  #members__button {
+    display: block;
+  }
+
+  .nav__link svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .nav__link,
+  #create__room__btn {
+    font-size: 0;
+    border: none;
+  }
+
+  #create__room__btn {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+
+  #create__room__btn:hover {
+    background-color: transparent;
+  }
+}
