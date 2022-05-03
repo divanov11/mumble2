@@ -74,11 +74,11 @@
 }
 
 #messages__container {
+  height: calc(100vh - 85px);
   background-color: #262625;
   right: 0;
   position: absolute;
   width: 100%;
-  /* height: 100vh; */
   max-width: 25rem;
   overflow-y: auto;
   border-left: 1px solid #111;
