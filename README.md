@@ -7,5 +7,4 @@ A real time messaging & video calling
 * 3 - Update APP ID, Temp Token and Channel Name in room_rtc.js
 
 
-# Projects Page
 <img src="./images/Group 42 (3).png">  
