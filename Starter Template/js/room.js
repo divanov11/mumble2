@@ -10,23 +10,11 @@ const chatButton = document.getElementById('chat__button');
 let activeMemberContainer = false;
 
 memberButton.addEventListener('click', () => {
-  if (activeMemberContainer) {
-    memberContainer.style.display = 'none';
-  } else {
-    memberContainer.style.display = 'block';
-  }
-
-  activeMemberContainer = !activeMemberContainer;
+ memberContainer.classList.toggle("show")
 });
 
 let activeChatContainer = false;
 
 chatButton.addEventListener('click', () => {
-  if (activeChatContainer) {
-    chatContainer.style.display = 'none';
-  } else {
-    chatContainer.style.display = 'block';
-  }
-
-  activeChatContainer = !activeChatContainer;
+ chatContainer.classList.toggle("show");
 });

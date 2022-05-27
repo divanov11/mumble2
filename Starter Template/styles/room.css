@@ -21,7 +21,9 @@
   height: 100%;
   z-index: 999;
 }
-
+#members__container.show{
+  display: block;
+}
 #members__count {
   background-color: #1d1d1c;
   padding: 7px 15px;
@@ -83,7 +85,9 @@
   overflow-y: auto;
   border-left: 1px solid #111;
 }
-
+#messages__container.show{
+  display: block;
+}
 #messages {
   width: 100%;
   height: 100%;
