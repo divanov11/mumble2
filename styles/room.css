@@ -110,13 +110,14 @@
 
 .message__body strong {
   font-weight: 600;
-  color: #ede0e0;
+  color: linear-gradient(124.29deg, #1dd3b0, #affc41);
 }
 
 .message__body__bot{
   padding: 0 20px;
   max-width: 900px;
-  color: #bdbdbd;
+  color: linear-gradient(124.29deg, #1dd3b0, #affc41);
+  
 }
 
 
@@ -128,7 +129,8 @@
 
 .message__author__bot {
   margin-right: 10px;
-  color: #a52aca!important;
+  color: #1dd3b0!important;
+  
 
 }
 
@@ -335,11 +337,11 @@
 .stream__actions button.active,
 .stream__actions a:hover,
 .stream__actions button:hover {
-  background-color: #845695;
+  background-color: #affc41;
 }
 
 #join-btn{
-  background-color: #845695;
+  background: linear-gradient(124.29deg, #1dd3b0, #affc41);
   font-size: 18px;
   padding: 25px 50px;
   border: none;
