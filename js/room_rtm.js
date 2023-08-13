@@ -99,7 +99,8 @@ let addMessageToDom = (name, message) => {
 }
 
 
-let addBotMessageToDom = (botMessage) => {
+let add
+MessageToDom = (botMessage) => {
     let messagesWrapper = document.getElementById('messages')
 
     let newMessage = `<div class="message__wrapper">
