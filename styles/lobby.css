@@ -9,6 +9,7 @@
   transform: translate(-50%, -50%);
 }
 
+
 #lobby__form {
   padding: 2em;
 }
@@ -52,7 +53,7 @@
 .form__field__wrapper button[type='submit'] {
   margin-top: 32px;
   cursor: pointer;
-  background-color: #845695;
+  background: linear-gradient(124.29deg, #1dd3b0, #affc41);
   border: none;
   color: #fff;
   font-size: 16px;

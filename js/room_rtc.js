@@ -1,4 +1,4 @@
-const APP_ID = "YOUR-APP-ID"
+const APP_ID = "01310a2ffd0c448fa444aa8534da7f66";
 
 let uid = sessionStorage.getItem('uid')
 if(!uid){
@@ -154,17 +154,20 @@ let toggleMic = async (e) => {
     }
 }
 
+
 let toggleCamera = async (e) => {
     let button = e.currentTarget
 
+
     if(localTracks[1].muted){
-        await localTracks[1].setMuted(false)
+        await localTracks[1].setMuted(true)
         button.classList.add('active')
     }else{
         await localTracks[1].setMuted(true)
         button.classList.remove('active')
     }
 }
+
 
 let toggleScreen = async (e) => {
     let screenButton = e.currentTarget
